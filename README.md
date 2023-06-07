@@ -1,14 +1,11 @@
 ## Purpose
 
-The purpose of this portfolio is to demonstrate the learning outcomes you've attained during your time at Founders and Coders (and beyond!). The portfolio should include code snippets and screenshots projects you've worked on, which will serve as evidence of your knowledge and abilities when you do your assessments.
+This portfolio documents my learning journey through the Founders and Coders Software Development bootcamp. 
 
-This portfolio template is also designed to showcase your skills and achievements to potential employers and others. By regularly updating your portfolio with new projects and learning outcomes, you can demonstrate your ongoing growth and development as a programmer.
+The links below outline three subjects explored during the bootcamp and, by following either, you can find a description of their learning objectives, complete with examples and explanations of those learnings.
 
-## Example from previous cohorts
 
-- https://github.com/DominicSimpson/portfolio
-
-## Learnings
+## Topics
 
 1. [Markup](/learnings/markup.md)
 1. [HTTP](/learnings/http.md)
