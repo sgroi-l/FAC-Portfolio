@@ -55,15 +55,41 @@ To ensure sufficient color contrast in our UI, we used colour contrast checking 
   ![screenshot of a  lighthouse report](https://github.com/sgroi-l/FAC-Portfolio/assets/74066857/066cfd52-3f38-4204-9a94-3994e626584b)
 ## 5. Use CSS media queries to ensure our content is always presented effectively on screens of different sizes
 
-## 6. Demonstrate a mobile-first approach to building a website
+This rule hides the horizontal scrollbar for the html element when viewed on screens with a width of 1024 pixels or less.
+
+```css
+@media screen and (max-width: 1024px) {
+
+  html {
+    overflow-x: hidden;
+  }
+```
 
 
-## 7. Use CSS variables to apply repeated colours to HTML elements
+## 6. Use CSS Flexbox to style children in a single-direction layout (ie a row or a column)
 
-## 8. Use CSS Flexbox to style children in a single-direction layout (ie a row or a column)
+```css
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  align-items: center;
+}
+```
 
-## 9. Use CSS Grid to style children in two-direction layout
+## 7. Ensure our Git commit history tells a coherent story
 
-## 10. Ensure our Git commit history tells a coherent story
+![screenshot of git history](https://github.com/sgroi-l/FAC-Portfolio/assets/74066857/96311080-9acc-4a59-a3eb-c8e0aa390dc6)
 
-## 11. Use the appropriate input types in HTML forms for gathering different types of information
+## 8. Use the appropriate input types in HTML forms for gathering different types of information
+
+```html
+<label class="lable-form" for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label class="lable-form" for="company">Company:</label>
+      <input type="text" id="company" name="company" />
+
+      <label class="lable-form" for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+```
