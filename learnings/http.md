@@ -66,7 +66,7 @@ See 1.
 let dataHistoryElement = document.querySelector("#data-history");
 ```
 
-## 9. Add and remove DOM nodes to change the content on the page
+## 8. Add and remove DOM nodes to change the content on the page
 
 ```javascript
 // Function to render weather data to the page
@@ -78,10 +78,32 @@ export function renderWeatherData(temperature, name, country, renderElement) {
 ```
 
 
-## 11. Use consistent layout and spacing
+## 9. Use consistent layout and spacing
 
-## 12. Follow a spacing guideline to give our app a consistent feel
+## 10. Follow a spacing guideline to give our app a consistent feel
 
-## 13. Debug client side JS in our web browser
+Consistent use of gaps and padding around UI elements ensures that there is enough space between elements, making the app's layout more balanced and less cluttered. You can see here how I preset gap sizes within the `:root` element
 
-## 14. Use console.log() to help us debug our code
+```css
+:root {
+    font-size: 10px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    --primary-color: #FFFBF3;
+    --second-color: #deb65ed4;
+    --small-font: 1.25rem;
+    --medium-font: 1.75rem;
+    --large-font: 3rem;
+    --small-gap: 1rem;
+    --medium-gap: 2rem;
+    --large-gap: 3rem;
+  }
+```
+
+## 11. Debug client side JS in our web browser
+
+I faced an issue with activity repetition. I stored activity types in an array and used `pop()` to remove a selected type, but it wasn't working as expected.
+
+ I added console logs to track the state of the array after each activity selection and removal. By triggering the event that called the `handleFormSubmit` function, I observed the console logs in the browser's developer tools. Based on the console output, I realised the filtering logic in the second fetch call was not updating the array correctly. I revised the filtering logic to properly remove the selected activity type from the array. After making the changes, I tested the application again and confirmed that the array was now being updated correctly, and the activity suggestions were no longer repeating. Once the issue was resolved, I removed the console logs to clean up the code. Debugging with console logs allowed me to quickly pinpoint the problem and make necessary adjustments for the desired behavior in activity selection.
+
+
